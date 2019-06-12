@@ -1,1 +1,32 @@
 // Mixins in here
+.header-font {
+    font-family: 'Indie Flower', cursive;
+}
+
+.dashed-grey {
+    border-bottom: 2px dashed grey;
+
+}
+
+.column-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    width: 500px;
+}
+
+
+
+// parametric mixins
+.btn-style(@width, @height,){
+    width: 40px;
+    height: 20px;
+    background-color: @eastern-blue;
+    color: white;
+    font-size: 1.5em;
+    padding: 15px 45%;
+    padding-bottom: 20px;
+    text-align: center;
+    border-radius: 10px;
+};
